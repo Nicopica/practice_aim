@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f0bf;
+  white-space: normal
+}
+
+#ajustes {
+display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: red;
+	border: 5px solid #555555;
+}
+
+/* esto lo copie de w3schools */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 25px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+}

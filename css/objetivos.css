@@ -1,0 +1,43 @@
+#ob13 {
+    width:60px;
+    height:60px;
+    background-color:red;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border: 1px solid black;
+    outline: none;
+    cursor: crosshair;
+    position: absolute;
+  }
+
+  #objetivos3 {
+    background-color: #b5af04;
+    border: 1px black solid;
+    cursor: crosshair;
+  }
+
+  #info3 {
+    margin-top: 10px;
+    border: 1px black solid;
+  }
+
+  #salaPequeño {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+   #objetivos3 div {
+     width:60px;
+     height:60px;
+     background-color:red;
+     -webkit-border-radius: 10000px;
+     -moz-border-radius: 10000px;
+     border: 1px solid black;
+     outline: none;
+     cursor: crosshair;
+     position: absolute;
+   }
+
+/*----------------------------------------------*/

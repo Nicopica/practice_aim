@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/objetivos.css">
+    <link rel="stylesheet" href="css/estiloAjustes.css">
+    <link rel="shortcut icon" href="imagenes/pracPunt.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script type="text/javascript" src="scripts/preCarga.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Nico">
+
+    <title>Practica tu puntería</title>
+  </head>
+  <body onload="cambioDianasPequeño();" onresize="revisarPosicionDianas();">
+
+    <audio src="audio/audiofallo.mp3" id="sonifallo"></audio>
+    <audio src="audio/audioacierto.mp3" id="soniacierto"></audio>
+    <audio src="audio/trampas.mp3" id="sonitrampas"></audio>
+
+<div id="salaPequeño">
+
+  <div id="objetivos3" oncontextmenu="return false" onmouseenter="entrandoMouse();" onmouseleave="saliendoMouse();"></div>
+
+  <script type="text/javascript">document.getElementById("objetivos3").style.height = innerHeight / 100 * 98 + "px"; //establecer dimensiones del campo de tiro</script>
+
+  <div id="info3">
+    <button type="button" name="button" id="irAjustes"> <p> Ajustes </p> </button>
+    <h3>Estadísticas</h3>
+    <p id="puntos3">Puntuación = 0</p>
+    <p id="fallos3">Fallos = 0</p>
+    <p id="pAciFa3">Porcentaje de aciertos = 100%</p>
+    <p id="crono3">Tiempo = 00:00</p>
+    <p id="racha3">Racha de aciertos = 0</p>
+    <p id="mejorRacha">Mejor racha = 0</p>
+    <p id="desaparicionesDiana">Dianas desaparecidas = 0</p>
+  </div>
+</div>
+
+  <div id="ajustes">
+    <h1>Ajustes</h3>
+    <button type="button" name="button" id="irSalaTiro"> <p> Volver </p> </button>
+    <div id="picker1"></div>
+    <p>Cambiar el fondo</p>
+    <div id="picker2"></div>
+    <p>Cambiar la diana</p>
+    <div id="pruebaObjetivos" oncontextmenu="return false">
+      <div id="dianaPrueba"></div>
+    </div>
+    <input type="range" value="60" min="1" max="612" id="ajustarTamaño" oninput="cambiarTamaño();">
+    <p>Velocidad de desaparición</p>
+    <input type="range" value="0" min="0" max="1000" id="velocidadPequeño" oninput="cambioVelocidad();">
+    <p>Cantidad de dianas</p>
+    <input type="range" name="numero_dianas" value="1" min="1" max="100" id="numeroDianasPequeño" oninput="cambioDianasPequeño();">
+    <p>Tamaño de la diana</p>
+    <p id="volumen">Volumen</p>
+    <input type="range" min="0" max="1000" id="barraVolumen" oninput="cambiarVolumen();">
+  </div>
+
+<!------------------------------------------------------------>
+    <script type="text/javascript" src="scripts/variables.js"></script>
+<!------------------------------------------------------------>
+    <script type="text/javascript" src="scripts/selector.js"></script>
+<!------------------------------------------------------------>
+    <script type="text/javascript" src="scripts/cronometro.js"></script>
+<!------------------------------------------------------------>
+    <script type="text/javascript" src="scripts/acciones.js"></script>
+<!------------------------------------------------------------>
+    <script type="text/javascript" src="scripts/ajustar.js"></script>
+<!------------------------------------------------------------>
+  </body>
+</html>

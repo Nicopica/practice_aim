@@ -1,0 +1,41 @@
+#ajustes {
+  margin-left: 10px;
+}
+
+#barraVolumen {
+  -webkit-appearance: none;
+  width: 95%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  cursor: pointer;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+#barraVolumen::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#dianaPrueba{
+    width:30px;
+    height:30px;
+    background-color:red;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border: 1px solid black;
+    outline: none;
+    margin-left: 40%;
+}
+
+#pruebaObjetivos {
+  background-color: #b5af04;
+  border: 1px solid black;
+  margin-right: 60%;
+  cursor: crosshair;
+}
